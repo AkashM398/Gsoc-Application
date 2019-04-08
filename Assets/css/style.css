@@ -1,20 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
-
-$btn-width: 250px !default;
-$btn-height: 80px !default;
-$btn-full: $btn-height+$btn-width !default;
-$btn-half: $btn-full/2 !default;
-$bg-color: #eeeeee !default;
-
 *{
     box-sizing: border-box;
 }
 
+/*Body*/
 body{
     background: #fff;
     margin: 0;
 }
 
+/*Navbar Starts*/
 .navbar.transparent.navbar-inverse .navbar-inner {
     border-width: 0px;
     -webkit-box-shadow: 0px 0px;
@@ -25,15 +19,39 @@ body{
     background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
 }
 
+/*Navbar*/
 .navbar-nav{
     margin-left: 450px;
 }
 
+/*Navbar-items*/
 .nav-item{
     padding-left: 50px;
     margin-top: -40px
 }
 
+/*Navbar-brand*/
+.navbar-brand{
+    width: 10%;
+}
+
+/*Navbar-brand-image*/
+.container img{
+    width: 250px;
+    margin-top: -50px;
+}
+
+/*Navbar-flag*/
+.flag img{
+    width: 20px;
+    position: absolute;
+    right: 10%;
+    top: 33.5%;
+}
+
+/*Navbar Ends*/
+
+/*Main-Content Starts*/
 
 #main-content{
     background: #fff;
@@ -42,6 +60,7 @@ body{
     height: 100%;
 }
 
+/*Banner*/
 #banner{
     background-color: #152942;
     width: 100%;
@@ -51,15 +70,16 @@ body{
     z-index: 2;
 }
 
+/*Divider line*/
 .vl{
     border-left: 3px solid white;
     height: 250px;
     position: absolute;
     left: 55%;
     top: 35%;
-    
 }
 
+/*Cloud-image-svg*/
 .container-fluid img{
     width: 35%;
     position: absolute;
@@ -67,6 +87,7 @@ body{
     top: 28%;
 }
 
+/*Header-text*/
 h1{
     position: absolute;
     right:15%;
@@ -75,49 +96,14 @@ h1{
     letter-spacing: 1px;   
 }
 
-
-.main{
-    background: #FFFFFF;
-    position: relative;
-    z-index: 3;
-}
-
-
-.main-raised{
-    margin: -90px 50px 0;
-    border-radius: 10px;
-    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-}
-
-.form-group{
-    padding: 60px;
-    width: 30%;
-}
-
-.form-rounded{
-    border-radius: 1rem;
-}
-
-.navbar-brand{
-    width: 10%;
-}
-
-.container img{
-    width: 250px;
-    margin-top: -50px;
-    
-}
-
-.thead{
-    box-shadow: 0 0.1px 5px 1px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-}
-
+/*Banner-button*/
 .btn{
     position: absolute;
     top: 60%;
     right: 20%;
 }
 
+/*Paragraph*/
 p{
     color: white;
     width: 30%;
@@ -126,26 +112,37 @@ p{
     top: 45%;
 }
 
-.flag img{
-    width: 20px;
-    position: absolute;
-    right: 10%;
-    top: 33.5%;
+/*Card-body*/
+.main{
+    background: #FFFFFF;
+    position: relative;
+    z-index: 3;
 }
 
-.setwidth{
-    max-width: 100px;
+/*Card-body raised*/
+.main-raised{
+    margin: -90px 50px 0;
+    border-radius: 10px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
-.concat div{
-    overflow: hidden;
-    -ms-text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: inherit;
+/*Search bar*/
+.form-group{
+    padding: 60px;
+    width: 30%;
 }
 
+/*Search bar rounded*/
+.form-rounded{
+    border-radius: 1rem;
+}
+
+/*Table head shadow*/
+.thead{
+    box-shadow: 0 0.1px 5px 1px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+/*Search bar functions*/
 .results tr[visible='false'],
 .no-result{
   display:none;
@@ -154,3 +151,5 @@ p{
 .results tr[visible='true']{
   display:table-row;
 }
+
+/*Main-content ends*/
